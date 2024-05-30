@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.lorminel'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.opencsv:opencsv:5.8'
+    implementation 'org.springframework:spring-jdbc:6.1.8'
+    implementation 'org.postgresql:postgresql:42.7.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
